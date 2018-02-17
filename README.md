@@ -1,4 +1,6 @@
-# start-tmp
-start-tmp with basic structure
+# Start Tmp
+Start Up Yarn-Gulp basic folder structure
 
-git clone, yarn, npm, yarn gulp start
+1,git clone...
+2.yarn
+3.yarn gulp start
