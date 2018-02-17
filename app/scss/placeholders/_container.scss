@@ -1,0 +1,8 @@
+@import "../settings/grid";
+
+%l-container {
+	margin-left:   auto;
+	margin-right:  auto;
+	padding-left:  abs($grid-gutter/2);
+	padding-left:  abs($grid-gutter/2);
+}
