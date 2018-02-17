@@ -3,4 +3,9 @@ body {
 
 h1, h2 {
   color: #000;
-  background: #fff; }
+  background: #ccc;
+  padding: 5px; }
+
+.ojales-majos {
+  padding: 5;
+  margin: 0; }
