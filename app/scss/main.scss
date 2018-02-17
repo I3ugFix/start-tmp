@@ -1,7 +1,17 @@
+$ojete-morener: 10px;
+
 body {
   background: #d6d6d6;
 }
+
 h1, h2 {
   color: #000;
-  background: #fff;
+  background: #ccc;
+  padding: abs($ojete-morener/2);
+}
+
+
+.ojales-majos {
+  padding: ($ojete-morener / 2px);
+  margin: 0;
 }
