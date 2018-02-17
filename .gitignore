@@ -1,5 +1,29 @@
 # node.js
 /node_modules
 
+### Node template
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
+
 #css -- scss only !
 /app/css
+
+# VSStudio
+.vscode
+.history
+jsconfig.json
+package-lock.json
+
+# Windows default autosave extension
+*.asv
+
+# OSX / *nix default autosave extension
+*.m~
+
+# Compiled MEX binaries (all platforms)
+*.mex*
