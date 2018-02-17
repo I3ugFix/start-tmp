@@ -1,0 +1,13 @@
+$sizes: (
+  sm:  576px,
+  md:  768px,
+  lg:  992px,
+  xl:  1140px,
+  xxl: 1440px,
+);
+
+$size-sm:  map-get($sizes, sm);
+$size-md:  map-get($sizes, md);
+$size-lg:  map-get($sizes, lg);
+$size-xl:  map-get($sizes, xl);
+$size-xxl: map-get($sizes, xxl);
