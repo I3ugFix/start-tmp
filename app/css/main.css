@@ -1,15 +1,44 @@
 @font-face {
-  font-family: main-font;
-  src: url(../fonts/plex-serif.ttf); }
+  font-family: primary-font;
+  src: url(../../fonts/OpenSans-Regular.ttf); }
 
-body {
-  background: #2c466d;
-  font-family: main-font; }
+@font-face {
+  font-family: secondary-font;
+  src: url(../../fonts/plex-serif.ttf); }
 
-h1, h2 {
-  color: #fcfcfc;
-  background: #000000;
-  padding: 5px; }
+h1 {
+  font-size: 48.82813px;
+  font-family: secondary-font;
+  margin: 0 0 25px 0; }
+
+h2 {
+  font-size: 39.0625px;
+  font-family: secondary-font;
+  margin: 0 0 25px 0; }
+
+h3 {
+  font-size: 31.25px;
+  font-family: secondary-font;
+  margin: 0 0 25px 0; }
+
+h4 {
+  font-size: 25px;
+  font-family: secondary-font;
+  margin: 0 0 25px 0; }
+
+h5 {
+  font-size: 20px;
+  font-family: secondary-font;
+  margin: 0 0 25px 0; }
+
+h6 {
+  font-size: 16px;
+  font-family: secondary-font;
+  margin: 0 0 25px 0; }
+
+p {
+  font-family: primary-font;
+  margin: 0 0 25px 0; }
 
 .ojales-majos {
   padding: 5;

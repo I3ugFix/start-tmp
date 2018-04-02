@@ -1,0 +1,15 @@
+$RATIO_VALUE:     1.25;
+$FONT_SIZE_VALUE: 16px;
+
+@function font-scale($exponent, $base-font-size:$FONT_SIZE_VALUE, $ratio:$RATIO_VALUE){
+  $value:1;
+
+  @for $i from 1 through $exponent {
+    $value: $value * $ratio;
+  }
+
+  @return if($exponent > 0, $base-font-size * $value, $base-font-size);
+}
+
+//Basic Use
+// .algo { font-size: font-scale(2);}

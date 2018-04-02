@@ -1,0 +1,22 @@
+@import "font/font-scale";
+@import "font/font-face";
+
+$BOTTOM_PUSH:25px;
+
+//Text basics
+
+//Title Scale & Margin-bottom
+@for $i from 1 through 6{
+  $exponent: 6 -$i;
+
+  h#{$i} {
+    font-size: font-scale($exponent);
+    font-family: secondary-font;
+    margin: 0 0 $BOTTOM_PUSH 0;
+  }
+}
+
+p {
+  font-family: primary-font;
+  margin: 0 0 $BOTTOM_PUSH 0;
+}

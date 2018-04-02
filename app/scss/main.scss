@@ -1,21 +1,9 @@
+@import "settings/_text-styles.scss";
+@import "settings/colores";
+
 $ojete-morener: 10px;
 
-@font-face {
-  font-family: main-font;
-  src: url(../fonts/plex-serif.ttf);
-}
-
-body {
-  background: #2c466d;
-  font-family: main-font;
-}
-
-h1, h2 {
-  color: #fcfcfc;
-  background: #000000;
-  padding: abs($ojete-morener/2);
-}
-
+ 
 
 .ojales-majos {
   padding: ($ojete-morener / 2px);
