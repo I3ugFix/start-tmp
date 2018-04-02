@@ -8,11 +8,7 @@ var cssnano     = require('gulp-cssnano');
 var imagemin    = require('gulp-imagemin');
 var del         = require('del');
 var runSequence = require('run-sequence');
-// var yarn        = require('gulp-yarn');
- var notify      = require("gulp-notify");
-
-gulp.src("./src/test.ext")
-  .pipe(notify("Hello Gulp!"));
+var yarn        = require('gulp-yarn');
 
 gulp.task('sass', function(){
   return gulp.src('app/scss/**/*.scss')
@@ -79,13 +75,13 @@ gulp.task('build', function (callback) {
   )
 })
 
-// gulp.task('yarn', function() {
-//   return gulp.src(['./package.json', './yarn.lock'])
-//       .pipe(gulp.dest('./dist'))
-//       .pipe(yarn({
-//           production: true
-//       }));
-// })
+gulp.task('yarn', function() {
+  return gulp.src(['./package.json', './yarn.lock'])
+      .pipe(gulp.dest('./dist'))
+      .pipe(yarn({
+          production: true
+      }));
+})
 
 gulp.task('default', function (callback) {
   runSequence(['sass','browserSync', 'watch'],
