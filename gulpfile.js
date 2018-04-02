@@ -34,13 +34,7 @@ gulp.task('browserSync', function() {
       baseDir: 'app'
     },
   })
-});
-
-gulp.task('useref', function(){
-  return gulp.src('app/*.html')
-    .pipe(useref())
-    .pipe(gulp.dest('dist'))
-});
+}); 
 
 gulp.task('useref', function(){
   return gulp.src('app/*.html')
@@ -77,17 +71,17 @@ gulp.task('build', function (callback) {
 
 gulp.task('yarn', function() {
   return gulp.src(['./package.json', './yarn.lock'])
-      .pipe(gulp.dest('./dist'))
-      .pipe(yarn({
-          production: true
-      }));
+    .pipe(gulp.dest('./dist'))
+    .pipe(yarn({
+        production: true
+    }));
 })
 
 gulp.task('default', function (callback) {
   runSequence(['sass','browserSync', 'watch'],
     callback
   )
-})
+}) 
 
 gulp.task('hi', function() {
   console.log('All is OK papi');
