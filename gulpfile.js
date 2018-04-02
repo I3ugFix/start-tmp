@@ -9,6 +9,13 @@ var imagemin    = require('gulp-imagemin');
 var del         = require('del');
 var runSequence = require('run-sequence');
 var yarn        = require('gulp-yarn');
+var plumber     = require('gulp-plumber');
+var coffee      = require('gulp-coffee');
+var sourcemaps  = require('gulp-sourcemaps');
+var notify      = require('gulp-notify'); 
+
+//gulp-notify
+var notify = require("gulp-notify");
 
 gulp.task('sass', function(){
   return gulp.src('app/scss/**/*.scss')
@@ -17,6 +24,7 @@ gulp.task('sass', function(){
     .pipe(browserSync.reload({
       stream: true
     }))
+    .pipe(notify("Sass is under control Papi!!"));
 });
 
 gulp.watch('app/scss/**/*.scss', ['sass']);
