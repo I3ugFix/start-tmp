@@ -2,5 +2,5 @@
 Start Up Yarn-Gulp basic folder structure
 
 1,git clone...
-2.yarn
-3.yarn gulp start
+2.npm install
+3.gulp
