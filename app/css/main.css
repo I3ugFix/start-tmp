@@ -1,9 +1,14 @@
+@font-face {
+  font-family: main-font;
+  src: url(../../dist/fonts/plex-serif.ttf); }
+
 body {
-  background: #d6d6d6; }
+  background: #2c466d;
+  font-family: main-font; }
 
 h1, h2 {
-  color: #000;
-  background: #ccc;
+  color: #fcfcfc;
+  background: #000000;
   padding: 5px; }
 
 .ojales-majos {
