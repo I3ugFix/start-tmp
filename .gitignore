@@ -13,6 +13,9 @@ npm-debug.log*
 #css -- scss only !
 /app/css
 
+# dist files
+/dist
+
 # VSStudio
 .vscode
 .history
